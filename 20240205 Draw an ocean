@@ -1,0 +1,14 @@
+#Draw an ocean
+def fill_ocean(size):
+    ocean = []
+    for i in range(size):
+        ocean.append("🟦" * size)
+    return ocean
+def draw_ocean(ocean):
+    for row in ocean:
+         print(' '.join(row))
+    
+# call fill_ocean
+# call draw_ocean
+ocean_grid = fill_ocean(10)
+draw_ocean(ocean_grid)
