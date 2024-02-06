@@ -8,8 +8,10 @@ def binary_search(arr, target):
             low = mid + 1
         else:
             high = mid - 1
-    return -1
+    return "wrong number"
 
+# demo
 my_list = [11, 12, 22, 25, 34, 64, 90]
 target_element = 22
 result = binary_search(my_list, target_element)
+print(f"Target {target_element} The index in the list is: {result}")
