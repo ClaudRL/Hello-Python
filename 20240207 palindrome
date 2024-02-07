@@ -1,0 +1,6 @@
+text = "qwerre7wq"
+re_text = text[::-1]
+if text == re_text:
+    print(re_text)
+else:
+    print('not a palindrome')
