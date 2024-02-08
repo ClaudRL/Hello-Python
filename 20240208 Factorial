@@ -1,0 +1,8 @@
+def factorial(num):
+    result = 1
+    for i in range(2, num+1):
+        result *= i
+    return result
+num = int(input("Enter a number:"))
+factorial_result = factorial(num)
+print(f"{num}!= {factorial_result}")
