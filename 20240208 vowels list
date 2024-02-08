@@ -1,0 +1,20 @@
+def vowels_list(word):
+    word_list = list(word)
+    vowels_list = []
+    
+    for i in word_list:
+        if i.lower() in ['a', 'e', 'i', 'o', 'u']:
+            vowels_list.append(i)
+
+    vowel_list = []
+    for j in vowels_list:
+        if j.lower() not in vowel_list:
+            vowel_list.append(j)
+
+    return vowels_list, vowel_list
+
+word = input('Enter a word: ')
+result_vowels, result_unique_vowels = vowels_list(word)
+
+print("All vowels:", result_vowels)
+print("Unique vowels:", result_unique_vowels)
