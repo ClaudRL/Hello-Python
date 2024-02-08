@@ -1,0 +1,14 @@
+def largest_num(numbers):
+    if numbers[0] > numbers[1]:
+        if numbers[0] > numbers[2]:
+            print("The largest is", numbers[0])
+        else:
+            print("The largest is", numbers[2])
+    elif numbers[1] > numbers[2]:
+        print("The largest is", numbers[1])
+    else:
+        print("The largest is", numbers[2])
+
+input_numbers = input('Enter 3 different numbers separated by commas: ')
+numbers = [int(num) for num in input_numbers.split(',')]
+largest_num(numbers)
