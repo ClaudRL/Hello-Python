@@ -1,0 +1,10 @@
+def cal(numbers):
+    print('minimum:', min(numbers))
+    print('maximum:', max(numbers))
+    print('average:', sum(numbers)/len(numbers))
+
+input_numbers = input('Enter the numbers separated by commas: ')
+numbers = [int(num) for num in input_numbers.split(',')]
+print(input_numbers)
+print(numbers)
+cal(numbers)
