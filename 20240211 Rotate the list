@@ -1,0 +1,12 @@
+def rotation_list(numbers,step):
+    list_len = len(numbers)
+    for i in range(step):
+        new_list1 = numbers[: list_len-1]
+        last_num = numbers[-1]
+        new_list1.insert(0, last_num)
+        numbers = new_list1
+    return numbers
+numbers = [1, 2, 3, 4, 5]
+step = 1
+result = rotation_list(numbers,step)
+print(result)
