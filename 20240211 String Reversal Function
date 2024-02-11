@@ -1,0 +1,15 @@
+ef reverse_sentence(text):
+    word_list = text.split(' ')
+    re_list = []
+    for word in word_list:
+        letter_list = list(word)
+        re_letter_list = letter_list[::-1]
+        result_word = ''.join(re_letter_list)
+        re_list.append(result_word)
+    result_sentence = ' '.join(re_list)
+    return result_sentence
+    
+text = input('Enter a sentence: ')
+print(text)
+result = reverse_sentence(text)
+print(result)
