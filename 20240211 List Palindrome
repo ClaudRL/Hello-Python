@@ -1,0 +1,7 @@
+def palindrome(names):
+    re_names = names[::-1]
+    palindrome_list = (names + re_names)
+    return palindrome_list
+
+names = ["Jack", "Rose", "Cal"]
+print(palindrome(names))
