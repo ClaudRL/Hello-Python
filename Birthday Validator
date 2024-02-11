@@ -1,0 +1,11 @@
+def date_checker(date):
+    date_list = date.split('/')
+    day = date_list[0]
+    month = date_list[1]
+    if int(day) in range(1,32) and int(month) in range(1,13):
+        print("OK")
+    else:
+        print("Invalid Birthday!")
+
+date = input('Enter the date in DD/MM:')
+date_checker(date)
