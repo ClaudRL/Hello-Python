@@ -1,0 +1,9 @@
+def slicing_list(numbers):
+    list_len = len(numbers)
+    mid_len = (list_len + 1)//2
+    new_list = numbers[0:mid_len]
+    return new_list
+
+numbers = [123, 312, 33, 22, 34,3,34]
+result = slicing_list(numbers)
+print(result)
