@@ -1,0 +1,18 @@
+def draw_ocean(ocean_size, titanic_pos, iceberg_pos):
+    # Create rows and append them to the ocean
+    #ocean = [["🟦" for _ in range(ocean_size)] for _ in range(ocean_size)]
+    ocean = []
+    for _ in range(ocean_size):
+        ocean.append(["🟦"] * ocean_size)
+
+    # Place Titanic and Iceberg in the ocean
+    ocean[titanic_pos[0]][titanic_pos[1]] = "🚢"
+    ocean[iceberg_pos[0]][iceberg_pos[1]] = "🧊"
+
+    # Print the ocean, Titanic and Iceberg
+    for row in ocean:
+        print(" ".join(row))
+
+
+# Call the function with specified parameters
+draw_ocean(10, [4, 7], [4, 2])
