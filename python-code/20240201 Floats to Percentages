@@ -1,0 +1,11 @@
+def to_percent(list_of_floats):
+    percent_list =[]
+    # Your code
+    for num in list_of_floats:
+        percent = float(num)*100
+        percent_list.append(percent)
+        new_list = percent_list.copy()
+    return new_list
+floats = [0.12, 0.75, 0.33, 0.98, 0.45, 0.5, 1 ,0]
+new_list = to_percent(floats)
+print(new_list)
