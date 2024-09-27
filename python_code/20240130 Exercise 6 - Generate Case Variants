@@ -1,6 +1,0 @@
-def generate_case_variants(text):
-    lowercase = text.lower()
-    uppercase = text.upper()
-    new_text = lowercase + ", " + uppercase
-    return new_text
-genrate_case_variants("Hello World")
