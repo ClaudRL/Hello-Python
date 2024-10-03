@@ -20,7 +20,6 @@ cars = pd.read_csv('cars.csv', index_col = 0)
 import numpy as np
 
 # Create medium: observations with cars_per_cap between 100 and 500
-medium = cars['cars_per_cap']
 between = np.logical_and(cars['cars_per_cap'] > 100, cars['cars_per_cap'] < 500)
 medium =cars[between]
 
