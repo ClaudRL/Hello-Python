@@ -37,7 +37,7 @@ for i in range(500) :
 np_aw_t = np.transpose(np.array(all_walks))
 plt.plot(np_aw_t)
 # Select last row from np_aw_t: ends
-ends = np_aw_t[-1]
+ends = np_aw_t[-1] # 索引是一种编程约定，用于方便地引用序列的最后一个元素。它不是实际的索引值，而是一种特殊的语法，Python 解释器会将其转换为适当的正索引。
 
 # Plot histogram of ends, display plot
 plt.hist(ends)
