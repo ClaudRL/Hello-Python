@@ -28,3 +28,6 @@ rice_consumption = food_consumption[food_consumption['food_category'] == 'rice']
 
 # Calculate mean and median of co2_emission with .agg()
 print(rice_consumption['co2_emission'].agg(['mean','median']))
+
+# 4. Given the skew of this data, what measure of central tendency best 
+# summarizes the kilograms of CO2 emissions per person per year for rice?
