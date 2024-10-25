@@ -4,7 +4,10 @@
 # norm from scipy.stats is imported as well as pandas as pd. The DataFrame amir_deals is loaded.
 
 # 1. What's the probability of Amir closing a deal worth less than $7500?
+# Probability of deal < 7500
+prob_less_7500 = norm.cdf(7500, 5000, 2000)
 
+# print(prob_less_7500)
 
 # 2. What's the probability of Amir closing a deal worth more than $1000?
 
