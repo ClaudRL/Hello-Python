@@ -9,7 +9,7 @@
 # Create a histogram of num_users and show
 amir_deals['num_users'].hist()
 plt.show()
-
+#-------------------------------------------
 # Yes, both `amir_deals['num_users'].hist()` and `amir_deals.hist(['num_users'])` will generate a histogram, but there are subtle differences in how each works:
 
 # 1. **`amir_deals['num_users'].hist()`**:
@@ -27,4 +27,17 @@ plt.show()
 # - Use `amir_deals.hist(['num_users'])` if there’s a possibility you’ll need to plot multiple columns, as it’s more flexible for handling multiple histograms in a single call. 
 
 # In general, for a single histogram, both are effective; the choice depends on whether you want a Series-specific or DataFrame-wide approach.
+#-------------------------------------------
+# 2. Set the seed to 104.
+# Take a sample of size 20 with replacement from the num_users column of amir_deals, and take the mean.
 
+# Set seed to 104
+np.random.seed(104)
+
+# Sample 20 num_users with replacement from amir_deals
+samp_20 = amir_deals['num_users'].sample(20, replace = True   )
+
+# Take mean of samp_20
+print(np.mean(samp_20))
+
+# 3.  Repeat this 100 times using a for loop and store as sample_means. This will take 100 different samples and calculate the mean of each.
